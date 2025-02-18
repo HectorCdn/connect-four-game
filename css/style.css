@@ -1,0 +1,123 @@
+body {
+	background-color: var(--purple);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ----------------------- header ----------------------- */
+
+header {
+	height: 10%;
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav {
+	display: flex;
+	width: 50%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* ----------------------- Main ----------------------- */
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	height: 70%;
+	justify-content: center;
+	align-items: center;
+}
+
+.score-player-div {
+	height: 30%;
+	width: 35%;
+	background-color: var(--white);
+	border-radius: 20px;
+	border: 3px solid var(--black);
+	box-shadow: 0px 10px 0px 0px var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.img-score-player-div {
+	position: relative;
+	top: -20px;
+}
+
+.h2-score-div {
+	font-size: var(--font-size-L);
+}
+
+.score-player-1 {
+	justify-self: end;
+}
+
+.section-part-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-white {
+	position: absolute;
+	z-index: 3;
+	width: 30%;
+}
+
+.grid-black {
+	position: relative;
+	top: 5px;
+	z-index: 1;
+	width: 60%;
+}
+
+.game {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+/* ----------------------- footer ----------------------- */
+
+footer {
+	height: 25%;
+	background-color: var(--dark-purple);
+	border-radius: 60px 60px 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-turn-div {
+    background-image: url(../assets/player-turn.svg);
+    height: 135px;
+    width: 161px;
+    z-index: 4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -45px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.player-turn-h3 {
+    font-size: var(--font-size-XS);
+}
+
+.player-turn-h2 {
+    font-size: var(--font-size-L);
+}

@@ -1,9 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
 :root {
     --black : rgba(0, 0, 0, 1);
     --dark-purple : rgba(92, 45, 213, 1);
     --purple : rgba(121, 69, 255, 1);
-    --red : rgba(253, 102, 135, 1);
+    --pink : rgba(253, 102, 135, 1);
     --yellow : rgba(255, 206, 103, 1);
     --white : rgba(255, 255, 255, 1);
+
+    --font-family: 'Space Grotesk', sans-serif; 
+
+    --font-size-L: 56px;
+    --font-line-height-L: 71px;
+
+    --font-size-M: 24px;
+    --font-line-height-M: 31px;
+
+    --font-size-S: 20px;
+    --font-line-height-S: 26px;
+
+    --font-size-XS: 16px;
+    --font-line-height-XS: 21px;
 }
+
+/* -------------------- button -------------------- */
+
+/* button pink  */
+
+.pink-idle {
+    background-color: var(--pink);
+    border: 3px solid var(--black);
+    box-shadow: 0px 10px 0px 0px var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-size: var(--font-height-M);
+}
+
+.pink-idle:hover {
+    border: 3px solid var(--dark-purple) !important;
+    box-shadow: 0px 10px 0px 0px var(--dark-purple) !important;
+}
+
+/* button yellow */
+
+.yellow-idle {
+    background-color: var(--yellow);
+    border: 3px solid var(--black);
+    box-shadow: 0px 10px 0px 0px var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-size: var(--font-height-M);
+}
+
+.yellow-idle:hover {
+    border: 3px solid var(--dark-purple) !important;
+    box-shadow: 0px 10px 0px 0px var(--dark-purple) !important;
+}
+
+/* button white */
+
+.white-idle {
+    background-color: var(--white);
+    border: 3px solid var(--black);
+    box-shadow: 0px 10px 0px 0px var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-size: var(--font-height-M);
+}
+
+.white-idle:hover {
+    border: 3px solid var(--dark-purple) !important;
+    box-shadow: 0px 10px 0px 0px var(--dark-purple) !important;
+}
+
+/* button-menu */
+
+.menu-idle {
+    border-radius: 40px;
+    background-color: var(--dark-purple);
+    border: none;
+    color: var(--white);
+    padding: 0px 20px;
+    font-size: var(--font-line-height-XS);
+    font-weight: 700;
+}
+
+.menu-idle:hover {
+    background-color: var(--pink);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

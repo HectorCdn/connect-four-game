@@ -9,12 +9,13 @@ body {
 /* ----------------------- header ----------------------- */
 
 header {
-	height: 10%;
+	display: none;
+	/* height: 10%;
 	width: 100%;
 	padding: 50px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 }
 
 nav {
@@ -27,15 +28,16 @@ nav {
 /* ----------------------- Main ----------------------- */
 
 main {
-	display: grid;
+	display: none;
+	/* display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	height: 70%;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 }
 
 .score-player-div {
-	height: 30%;
+	height: 35%;
 	width: 35%;
 	background-color: var(--white);
 	border-radius: 20px;
@@ -45,6 +47,45 @@ main {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+.player-win {
+	bottom: 60px;
+	position: absolute;
+	z-index: 4;
+	height: 20%;
+	width: 15%;
+	background-color: var(--white);
+	border-radius: 20px;
+	border: 3px solid var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--black);
+	box-shadow: 0px 10px 0px 0px var(--black);
+}
+
+.player-win-2 {
+	font-size: var(--font-size-L);
+	line-height: 55px;
+}
+
+.player-turn-div {
+	display: none;
+    /* height: 135px;
+    width: 161px;
+    z-index: 4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 75px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 
 .img-score-player-div {
@@ -70,6 +111,7 @@ main {
 	position: absolute;
 	z-index: 3;
 	width: 30%;
+	user-select: none;
 }
 
 .grid-black {
@@ -77,6 +119,7 @@ main {
 	top: 5px;
 	z-index: 1;
 	width: 60%;
+	user-select: none;
 }
 
 .game {
@@ -85,37 +128,100 @@ main {
 	grid-template-rows: repeat(6, 1fr);
 }
 
+.rules {
+	height: 100vh;
+	width: 100vw;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.background-div-rule {
+	padding: 30px;
+	background-color: var(--white);
+	border-radius: 20px;
+	height: 70%;
+	width: 25%;
+	border: 3px solid var(--black);
+	box-shadow: 0px 10px 0px 0px var(--black);
+	position: relative;
+}
+
+.h1-rule {
+	font-size: var(--font-size-L);
+	text-align: center;
+}
+
+.background-part{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.h2-rule{
+	font-size: var(--font-size-S);
+	color: var(--purple);
+}
+
+.accept {
+	height: 64px;
+	width: 64px;
+	border-radius: 500px;
+	background-color: var(--pink);
+	border: 3px solid var(--black);
+	box-shadow: 0px 5px 0px 0px var(--black);
+	position: absolute;
+	bottom: -35px;
+	left: 165px;
+
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.accept:hover {
+	border: 3px solid var(--dark-purple);
+	box-shadow: 0px 5px 0px 0px var(--dark-purple);
+}
+
 /* ----------------------- footer ----------------------- */
 
 footer {
+	display: none;
 	height: 25%;
-	background-color: var(--dark-purple);
-	border-radius: 60px 60px 0 0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	position: relative;
 }
 
-.player-turn-div {
-    background-image: url(../assets/player-turn.svg);
-    height: 135px;
-    width: 161px;
-    z-index: 4;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.footer-div {
+	height: 125%;
+	width: 100%;
+	background-color: var(--dark-purple);
+	border-radius: 60px 60px 0 0;
     position: absolute;
-    top: -45px;
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	bottom: 0;
 }
- 
+
+.footer-player-1-win {
+	background-color: var(--pink);
+}
+
+.footer-player-2-win {
+	background-color: var(--yellow);
+}
+
+.player-1-turn {
+	background-image: url(../assets/player-turn.svg);
+}
+
+.player-2-turn {
+	background-image: url(../assets/player-2-turn.svg);
+}
+
 .player-turn-h3 {
-    font-size: var(--font-size-XS);
+    font-size: 14px;
 }
 
 .player-turn-h2 {

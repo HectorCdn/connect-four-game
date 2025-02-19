@@ -18,31 +18,80 @@
 			</nav>
 		</header>
 
+		<!-- main -->
+
 		<main>
-            <section class="score-player-div score-player-1">
-                <img class="img-score-player-div" src="./assets/player-one.svg" alt="player-one">
-                <h3>PLAYER 1</h3>
-                <h2 class="h2-score-div">12</h2>
-            </section>
-            <section class="section-part-2">
-                <img class="grid-white" src="./assets/grid-white.svg" alt="">
-                <div class="game">
-                    <div class=""></div>
-                </div>
-                <img class="grid-black" src="./assets/grid-black.svg" alt="">
-            </section>
-            <section class="score-player-div score-player-2">
-                <img class="img-score-player-div" src="./assets/player-two.svg" alt="player-two">
-                <h3>PLAYER 2</h3>
-                <h2 class="h2-score-div">24</h2>
-            </section>
-        </main>
-        <footer>
-            <div class="player-turn-div">
-                <h3 class="player-turn-h3">PLAYER 1’S TURN</h3>
-                <h2 class="player-turn-h2">3s</h2>
-            </div>
-        </footer>
+			<section class="score-player-div score-player-1">
+				<img
+					class="img-score-player-div"
+					src="./assets/player-one.svg"
+					alt="player-one"
+				/>
+				<h3>PLAYER 1</h3>
+				<h2 class="h2-score-div">12</h2>
+			</section>
+			<section class="section-part-2">
+				<img class="grid-white" src="./assets/grid-white.svg" alt="" />
+				<div class="game">
+					<div class=""></div>
+				</div>
+				<img class="grid-black" src="./assets/grid-black.svg" alt="" />
+				<div class="player-turn-div player-1-turn">
+					<h3 class="player-turn-h3">PLAYER 1’S TURN</h3>
+					<h2 class="player-turn-h2">3s</h2>
+				</div>
+				<div class="player-win">
+					<h3>PLAYER 1</h3>
+					<h2 class="player-win-2">WINS</h2>
+					<button class="menu-idle">PLAY AGAIN</button>
+				</div>
+			</section>
+			<section class="score-player-div score-player-2">
+				<img
+					class="img-score-player-div"
+					src="./assets/player-two.svg"
+					alt="player-two"
+				/>
+				<h3>PLAYER 2</h3>
+				<h2 class="h2-score-div">24</h2>
+			</section>
+		</main>
+
+		<section class="rules">
+			<div class="background-div-rule">
+				<h1 class="h1-rule">RULES</h1>
+				<div class="background-part">
+					<div>
+						<h2 class="h2-rule">OBJECTIVE</h2>
+						<p>
+							Be the first player to connect 4 of the same colored discs in a
+							row (either vertically, horizontally, or diagonally).
+						</p>
+					</div>
+					<div>
+						<h2 class="h2-rule">HOW TO PLAY</h2>
+						<ol>
+							<li>Red goes first in the first game.</li>
+							<li>
+								Players must alternate turns, and only one disc can be dropped
+								in each turn.
+							</li>
+							<li>The game ends when there is a 4-in-a-row or a stalemate.</li>
+							<li>The game ends when there is a 4-in-a-row or a stalemate.</li>
+						</ol>
+					</div>
+				</div>
+                <button class="accept">
+                    <img src="./assets/accept.svg" alt="accept logo">
+                </button>
+			</div>
+		</section>
+
+		<!-- footer -->
+
+		<footer>
+			<div class="footer-div"></div>
+		</footer>
 		<script src="app.js"></script>
 	</body>
 </html>

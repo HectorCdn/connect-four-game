@@ -48,7 +48,8 @@ main {
 }
 
 .player-win {
-	bottom: 60px;
+	display: none;
+	/* bottom: 60px;
 	position: absolute;
 	z-index: 4;
 	height: 20%;
@@ -61,7 +62,7 @@ main {
 	justify-content: center;
 	flex-direction: column;
 	color: var(--black);
-	box-shadow: 0px 10px 0px 0px var(--black);
+	box-shadow: 0px 10px 0px 0px var(--black); */
 }
 
 .player-win-2 {
@@ -129,7 +130,9 @@ main {
 
 .rules {
 	display: none;
-	/* height: 100vh;
+	/* background-color: var(--purple);
+	position: absolute;
+	height: 100vh;
 	width: 100vw;
 	z-index: 5;
 	display: flex;
@@ -188,15 +191,14 @@ main {
 /* ----------------------- section pause ----------------------- */
 
 .pause-section {
-	display: none;
-	/* background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 	height: 100vh;
 	width: 100vw;
 	position: absolute;
 	z-index: 50;
 	display: flex;
 	align-items: center;
-	justify-content: center; */
+	justify-content: center;
 }
 
 .pause-div {
@@ -237,14 +239,15 @@ main {
 /* ----------------------- menu section ----------------------- */
 
 .menu-section {
-	height: 100vh;
+	display: none;
+	/* height: 100vh;
 	width: 100vw;
 	position: absolute;
 	z-index: 100;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--dark-purple);
+	background-color: var(--dark-purple); */
 }
 
 .menu-div {
